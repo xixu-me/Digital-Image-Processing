@@ -10,7 +10,7 @@ def gamma_trans(img, gamma=1.0):
 
 
 if __name__ == "__main__":
-    im = cv.imread(r"E:\OneDrive\Code\Python\2\iris.jpg", cv.IMREAD_GRAYSCALE)
+    im = cv.imread(r"src.jpg", cv.IMREAD_GRAYSCALE)
     im1 = gamma_trans(im, 0.5)
     im2 = gamma_trans(im, 1.5)
     plt.figure()

@@ -21,7 +21,7 @@ def histogram_equalization(im):
 
 
 if __name__ == "__main__":
-    im = cv.imread(r"E:\OneDrive\Code\Python\2\iris.jpg", cv.IMREAD_GRAYSCALE)
+    im = cv.imread(r"src.jpg", cv.IMREAD_GRAYSCALE)
     im1 = global_linear_transmation(im, 0, 150)
     im2 = global_linear_transmation(im, 100)
     im3 = global_linear_transmation(im, 50, 150)

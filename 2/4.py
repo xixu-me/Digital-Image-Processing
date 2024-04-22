@@ -33,7 +33,7 @@ def addGaussianNoise(src, means, sigma):
 
 
 if __name__ == "__main__":
-    im = cv.imread(r"E:\OneDrive\Code\Python\2\iris.jpg", cv.IMREAD_GRAYSCALE)
+    im = cv.imread(r"src.jpg", cv.IMREAD_GRAYSCALE)
     im1 = addSaltAndPepper(im, 0.1)
     im11 = cv.blur(im1, (3, 3))
     im12 = cv.medianBlur(im1, 3)

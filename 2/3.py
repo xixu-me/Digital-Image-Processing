@@ -2,7 +2,7 @@ import cv2 as cv
 from matplotlib import pyplot as plt
 import numpy as np
 
-img = cv.imread(r"E:\OneDrive\Code\Python\2\iris.jpg", 0)
+img = cv.imread(r"src.jpg", 0)
 fil1 = 1 / 16 * np.array([[1, 2, 1], [2, 4, 2], [1, 2, 1]])
 fil2 = 1 / 9 * np.array([[1, 1, 1], [1, 1, 1], [1, 1, 1]])
 fil3 = 1 / 10 * np.array([[1, 1, 1], [1, 2, 1], [1, 1, 1]])
