@@ -25,12 +25,13 @@ def histogram(image):
     return hist
 
 
-image0 = createBox()
-plt.figure()
-plt.subplot(1, 2, 1)
-plt.imshow(image0, vmin=0, vmax=255, cmap=plt.cm.gray)
-plt.title("idel image")
-image_hist0 = histogram(image0)
-plt.subplot(1, 2, 2)
-plt.bar(range(256), image_hist0)
-plt.show()
+if __name__ == "__main__":
+    image0 = createBox()
+    plt.figure()
+    plt.subplot(1, 2, 1)
+    plt.imshow(image0, vmin=0, vmax=255, cmap=plt.cm.gray)
+    plt.title("idel image")
+    image_hist0 = histogram(image0)
+    plt.subplot(1, 2, 2)
+    plt.bar(range(256), image_hist0)
+    plt.show()

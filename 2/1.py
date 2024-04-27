@@ -1,7 +1,6 @@
 import numpy as np
 import cv2 as cv
 import matplotlib.pyplot as plt
-from sympy import im
 
 
 def global_linear_transmation(im, c=0, d=255):
