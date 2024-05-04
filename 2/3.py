@@ -1,9 +1,9 @@
 import cv2 as cv
-from matplotlib import pyplot as plt
+import matplotlib.pyplot as plt
 import numpy as np
 
 if __name__ == "__main__":
-    img = cv.imread(r"src.jpg", 0)
+    img = cv.imread(r"img\iris.jpg", 0)
     fil1 = 1 / 16 * np.array([[1, 2, 1], [2, 4, 2], [1, 2, 1]])
     fil2 = 1 / 9 * np.array([[1, 1, 1], [1, 1, 1], [1, 1, 1]])
     fil3 = 1 / 10 * np.array([[1, 1, 1], [1, 2, 1], [1, 1, 1]])
@@ -12,7 +12,6 @@ if __name__ == "__main__":
     ImgSmoothed2 = cv.filter2D(img, -1, fil2, borderType=cv.BORDER_DEFAULT)
     ImgSmoothed3 = cv.filter2D(img, -1, fil3, borderType=cv.BORDER_DEFAULT)
     ImgSharp = cv.filter2D(img, -1, fil4, borderType=cv.BORDER_DEFAULT)
-
     plt.figure()
     plt.subplot(221)
     plt.imshow(ImgSmoothed1, cmap="gray")

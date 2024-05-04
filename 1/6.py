@@ -1,10 +1,9 @@
-import cv2
+import cv2 as cv
 import matplotlib.pyplot as plt
 
-if __name__ == "__main__":
-    plt.rcParams["font.family"] = ["SimHei"]
-    plt.rcParams["axes.unicode_minus"] = False
-    img_BGR = cv2.imread(r"src.jpg")
-    img_RGB = cv2.cvtColor(img_BGR, cv2.COLOR_BGR2RGB)
-    plt.imshow(img_RGB)
-    plt.show()
+plt.rcParams["font.family"] = ["SimHei"]
+plt.rcParams["axes.unicode_minus"] = False
+img_BGR = cv.imread(r"img\iris.jpg")
+img_RGB = cv.cvtColor(img_BGR, cv.COLOR_BGR2RGB)
+plt.imshow(img_RGB)
+plt.show()

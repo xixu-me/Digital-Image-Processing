@@ -33,15 +33,15 @@ def addGaussianNoise(src, means, sigma):
 
 
 if __name__ == "__main__":
-    im = cv.imread(r"src.jpg", cv.IMREAD_GRAYSCALE)
+    im = cv.imread(r"img\iris.jpg", cv.IMREAD_GRAYSCALE)
     im1 = addSaltAndPepper(im, 0.1)
     im11 = cv.blur(im1, (3, 3))
     im12 = cv.medianBlur(im1, 3)
     im13 = cv.GaussianBlur(im1, (3, 3), 1)
     im2 = addGaussianNoise(im, 0, 0.1)
-    im21 = cv.blur(im2, (3, 3))
-    im22 = cv.medianBlur(im2, 3)
-    im23 = cv.GaussianBlur(im2, (3, 3), 1)
+    im21 = cv.blur(im2, (3, 3))  # type: ignore
+    im22 = cv.medianBlur(im2, 3)  # type: ignore
+    im23 = cv.GaussianBlur(im2, (3, 3), 1)  # type: ignore
     plt.figure()
     plt.subplot(241)
     plt.imshow(im1, cmap="gray")

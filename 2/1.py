@@ -20,7 +20,7 @@ def histogram_equalization(im):
 
 
 if __name__ == "__main__":
-    im = cv.imread(r"src.jpg", cv.IMREAD_GRAYSCALE)
+    im = cv.imread(r"img\iris.jpg", cv.IMREAD_GRAYSCALE)
     im1 = global_linear_transmation(im, 0, 150)
     im2 = global_linear_transmation(im, 100)
     im3 = global_linear_transmation(im, 50, 150)
@@ -39,11 +39,11 @@ if __name__ == "__main__":
     plt.imshow(im4, cmap="gray")
     plt.title("equalized")
     plt.subplot(245)
-    plt.hist(im1.flatten(), 256, [0, 256])
+    plt.hist(im1.flatten(), 256, [0, 256])  # type: ignore
     plt.subplot(246)
-    plt.hist(im2.flatten(), 256, [0, 256])
+    plt.hist(im2.flatten(), 256, [0, 256])  # type: ignore
     plt.subplot(247)
-    plt.hist(im3.flatten(), 256, [0, 256])
+    plt.hist(im3.flatten(), 256, [0, 256])  # type: ignore
     plt.subplot(248)
-    plt.hist(im4.flatten(), 256, [0, 256])
+    plt.hist(im4.flatten(), 256, [0, 256])  # type: ignore
     plt.show()

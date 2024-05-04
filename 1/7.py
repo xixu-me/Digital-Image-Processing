@@ -1,6 +1,5 @@
-import cv2
+import cv2 as cv
 import matplotlib.pyplot as plt
-import math
 import numpy as np
 
 
@@ -8,7 +7,7 @@ def createBox():
     box = np.zeros((100, 100), np.uint8) + 255
     print(type(box))
     shape = box.shape
-    box = cv2.circle(box, (30, 50), 25, 0, -1)
+    box = cv.circle(box, (30, 50), 25, 0, -1)  # type: ignore
     for i in range(shape[0]):
         for j in range(shape[1]):
             if j in range(45, 95) and i in range(25, 75):
@@ -29,7 +28,7 @@ if __name__ == "__main__":
     image0 = createBox()
     plt.figure()
     plt.subplot(1, 2, 1)
-    plt.imshow(image0, vmin=0, vmax=255, cmap=plt.cm.gray)
+    plt.imshow(image0, vmin=0, vmax=255, cmap=plt.cm.gray)  # type: ignore
     plt.title("idel image")
     image_hist0 = histogram(image0)
     plt.subplot(1, 2, 2)
