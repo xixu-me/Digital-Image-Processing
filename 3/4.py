@@ -2,9 +2,6 @@ import cv2 as cv
 import numpy as np
 import matplotlib.pyplot as plt
 
-plt.rcParams["font.sans-serif"] = ["SimHei"]
-plt.rcParams["axes.unicode_minus"] = False
-
 img = cv.imread(r"img\peppers.bmp", 0)
 m, n = img.shape
 if m % 2 == 0:
