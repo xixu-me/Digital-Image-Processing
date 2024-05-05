@@ -1,5 +1,3 @@
-# 编写程序实现巴特沃斯低通滤波，H(u,v)=1/(1+[D(u,v)/D0]^2n)，实验图8是阶数n=4时的滤波效果图，改变n值，查看并分析阶数n对滤波器的影响
-
 import cv2 as cv
 import numpy as np
 from math import *  # type: ignore
