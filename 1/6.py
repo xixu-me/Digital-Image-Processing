@@ -6,4 +6,5 @@ plt.rcParams["axes.unicode_minus"] = False
 img_BGR = cv.imread(r"img\iris.jpg")
 img_RGB = cv.cvtColor(img_BGR, cv.COLOR_BGR2RGB)
 plt.imshow(img_RGB)
+plt.axis("off")
 plt.show()

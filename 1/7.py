@@ -30,6 +30,7 @@ if __name__ == "__main__":
     plt.subplot(1, 2, 1)
     plt.imshow(image0, vmin=0, vmax=255, cmap=plt.cm.gray)  # type: ignore
     plt.title("idel image")
+    plt.axis("off")
     image_hist0 = histogram(image0)
     plt.subplot(1, 2, 2)
     plt.bar(range(256), image_hist0)
