@@ -28,7 +28,7 @@ if __name__ == "__main__":
     image0 = createBox()
     plt.figure()
     plt.subplot(1, 2, 1)
-    plt.imshow(image0, vmin=0, vmax=255, cmap=plt.cm.gray)  # type: ignore
+    plt.imshow(image0, vmin=0, vmax=255, cmap="gray")  # type: ignore
     plt.title("idel image")
     plt.axis("off")
     image_hist0 = histogram(image0)
