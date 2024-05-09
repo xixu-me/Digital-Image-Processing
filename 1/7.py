@@ -34,4 +34,5 @@ if __name__ == "__main__":
     image_hist0 = histogram(image0)
     plt.subplot(1, 2, 2)
     plt.bar(range(256), image_hist0)
+    plt.tight_layout()
     plt.show()

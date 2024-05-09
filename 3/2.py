@@ -57,4 +57,5 @@ if __name__ == "__main__":
     plt.imshow(img1, cmap="gray")
     plt.title("ILPF滤波后重构图像")
     plt.axis("off")
+    plt.tight_layout()
     plt.show()

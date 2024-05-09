@@ -26,4 +26,5 @@ if __name__ == "__main__":
     plt.imshow(im2, cmap="gray")
     plt.title("gamma = 1.5")
     plt.axis("off")
+    plt.tight_layout()
     plt.show()

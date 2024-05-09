@@ -75,4 +75,5 @@ if __name__ == "__main__":
     plt.imshow(im23, cmap="gray")
     plt.title("gaussian")
     plt.axis("off")
+    plt.tight_layout()
     plt.show()

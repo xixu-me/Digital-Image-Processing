@@ -50,4 +50,5 @@ if __name__ == "__main__":
     plt.hist(im3.flatten(), 256, [0, 256])  # type: ignore
     plt.subplot(248)
     plt.hist(im4.flatten(), 256, [0, 256])  # type: ignore
+    plt.tight_layout()
     plt.show()

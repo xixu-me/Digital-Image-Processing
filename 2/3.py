@@ -29,4 +29,5 @@ if __name__ == "__main__":
     plt.imshow(ImgSharp, cmap="gray")
     plt.title("sharp")
     plt.axis("off")
+    plt.tight_layout()
     plt.show()

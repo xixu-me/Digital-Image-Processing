@@ -21,4 +21,5 @@ if __name__ == "__main__":
     plt.imshow(ImgLplcEnhance, cmap="gray")
     plt.title("laplacian enhanced")
     plt.axis("off")
+    plt.tight_layout()
     plt.show()
