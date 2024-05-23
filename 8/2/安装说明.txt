@@ -1,0 +1,12 @@
+开发该软件的操作系统		Windows 7
+软件开发环境/开发工具		Pycharm community 2019.3
+软件运行支撑环境/支持软件	Windows 7
+编程语言			Python3.7
+OpenCV-Python			4.1.0.25
+Numpy				1.18.1
+matplotlib			3.1.3
+scipy				1.4.1
+tk				8.6.8
+scikit-image			0.16.2
+scikit-learn			0.22.1
+pillow				7.0.0
