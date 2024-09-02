@@ -1,6 +1,6 @@
 import cv2 as cv
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
 
 plt.rcParams["font.family"] = ["SimSun"]
 src = cv.imread(r"img\peppers.bmp", cv.IMREAD_GRAYSCALE)
@@ -10,7 +10,7 @@ row, col = src.shape[:2]
 src1 = np.zeros((row, col), dtype=np.float32)
 for i in range(row):
     for j in range(col):
-        src1[i, j] = src[i, j] * ((-1) ** (i + j))
+        src1[i, j] = np.float32(src[i, j]) * ((-1) ** (i + j))
 dft1 = cv.dft(src1, flags=cv.DFT_COMPLEX_OUTPUT)
 magnitude0 = cv.magnitude(dft1[:, :, 0], dft1[:, :, 1])
 magnitude1 = 20 * np.log(1 + magnitude0)  # type: ignore
