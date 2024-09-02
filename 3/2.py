@@ -1,8 +1,9 @@
-import cv2 as cv
-import numpy as np
-from math import *  # type: ignore
 import random
+from math import *  # type: ignore
+
+import cv2 as cv
 import matplotlib.pyplot as plt
+import numpy as np
 
 plt.rcParams["font.sans-serif"] = ["SimSun"]
 plt.rcParams["axes.unicode_minus"] = False

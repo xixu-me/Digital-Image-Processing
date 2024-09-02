@@ -1,30 +1,31 @@
 # -*- coding: UTF-8 -*-
-from globalObject import *
+import os
+import time
 import tkinter
-from tkinter.simpledialog import askinteger, askfloat, askstring
 from tkinter.filedialog import (
+    askdirectory,
     askopenfilename,
     askopenfilenames,
     asksaveasfilename,
-    askdirectory,
 )
-from tkinter.messagebox import showinfo, showwarning, showerror, askyesno
-from PIL import Image, ImageTk
-import os
-import time
-from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
-import PointProcessing
-import Histogram
-import SpatialFilter
+from tkinter.messagebox import askyesno, showerror, showinfo, showwarning
+from tkinter.simpledialog import askfloat, askinteger, askstring
+
+import carLicense.predict as predict
+import description
 import Fourier
 import geometric
-import spatialRestore
-import Restore
-import morphology
-import segmentation
-import description
-import carLicense.predict as predict
+import Histogram
 import matplotlib.pyplot as plt
+import morphology
+import PointProcessing
+import Restore
+import segmentation
+import SpatialFilter
+import spatialRestore
+from globalObject import *
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+from PIL import Image, ImageTk
 
 plt.rcParams["font.sans-serif"] = ["SimHei"]  # 用来正常显示中文标签
 plt.rcParams["axes.unicode_minus"] = False  # 用来正常显示负

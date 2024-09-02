@@ -1,6 +1,6 @@
-import numpy as np
 import cv2 as cv
 import matplotlib.pyplot as plt
+import numpy as np
 
 
 def global_linear_transmation(im, c=0, d=255):

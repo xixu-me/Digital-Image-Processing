@@ -1,7 +1,8 @@
 import random as rd
-import numpy as np
+
 import cv2 as cv
 import matplotlib.pyplot as plt
+import numpy as np
 
 
 def addSaltAndPepper(src, percentage):

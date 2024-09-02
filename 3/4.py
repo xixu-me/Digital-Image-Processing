@@ -1,6 +1,6 @@
 import cv2 as cv
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
 
 img = cv.imread(r"img\peppers.bmp", 0)
 m, n = img.shape

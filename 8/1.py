@@ -1,9 +1,12 @@
-from sklearn import datasets
-from skimage.feature import hog
-from sklearn.svm import LinearSVC
-import numpy as np
-import os, math, cv2, struct
+import math
+import os
+import struct
+
 import matplotlib.pyplot as plt
+import numpy as np
+from skimage.feature import hog
+from sklearn import datasets
+from sklearn.svm import LinearSVC
 
 plt.rcParams["font.sans-serif"] = ["Times New Roman"]
 plt.rcParams["axes.unicode_minus"] = False
@@ -394,8 +397,8 @@ print(metrics.classification_report(testlabels, test_est))
 
 print(testlabels.shape)
 
-from sklearn.svm import LinearSVC
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.svm import LinearSVC
 
 rf_model = RandomForestClassifier()
 rf_model.fit(hog_features, labels)

@@ -1,6 +1,6 @@
 import cv2 as cv
-from matplotlib import pyplot as plt
 import numpy as np
+from matplotlib import pyplot as plt
 
 if __name__ == "__main__":
     img = cv.imread(r"img\iris.jpg", 0)
